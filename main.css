@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+header{
+    background-color: blueviolet;
+    color: #ffff;
+    padding: 20px;
+}
+
+.container{
+    display: flex;
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.links{
+    display: flex;
+    list-style: none;
+}
+
+.links li a{
+    padding: 16px;
+    color: #ffff;
+    align-items: center;
+}
+
+#tituloSobre{
+    padding: 16px;
+    margin-left: 50px;
+}
+
+.conteudo h2{
+    padding: 16px;
+    align-items: center;
+}
+
+.sobre{
+    display: flex;
+}
+
+.texto, p{
+    margin-left: 16px;
+    margin-bottom: 8px;
+}
+
+.border{
+        padding: 16px 0 0;
+        border-bottom: 1px solid blueviolet;
+        margin-bottom: 36px;
+}
+
+.produtos h4{
+    margin-bottom: 10px;
+}
+
+.itens{
+    justify-content: space-around;
+}
+
+.itens li{
+    display: inline-block;
+    list-style: none;
+    max-width: 25%;
+    padding: 8px;
+}
+
+.itens li p{
+    margin-left: 0;
+    margin-right: 25px;
+}
+
+button{
+    padding: 4px;
+    margin-top: 4px;
+    background-color: blueviolet;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+    color: aliceblue;
+}
+
+@media screen and (max-width:767px) {
+    .container {
+        display: block;
+        max-width: 90%;
+    }
+
+    .sobre{
+        display: block;
+    }
+
+    main h2{
+        margin-left: 0px;
+    }
+
+    .produtos .itens{
+        display: grid;
+    }
+
+    .itens li{
+        display: inline-block;
+        list-style: none;
+        max-width: 100%;
+        padding: 8px;
+        
+    }
+
+    header .container{
+        padding: 16px;
+        align-items: center;
+    }
+    
+}
+
+@media screen and (min-width:768px) and (max-width:1023px){
+    .container{
+        max-width: 90%;
+    }
+
+    .produtos .itens{
+        display: inline-block;
+    }
+}
